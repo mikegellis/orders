@@ -1,0 +1,45 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "Orders",
+    "version" : "1.0",
+    "description" : "Manage OE Orders."
+  },
+  "basePath" : "/orders",
+  "host" : "prod-28.eastus.logic.azure.com",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/oe/orderget/v1" : {
+      "get" : {
+        "description" : "Get orders by primary key",
+        "operationId" : "Order Get",
+        "responses" : {
+          "200" : {
+            "description" : "success"
+          }
+        }
+      }
+    },
+    "/oe/createquote/v1" : {
+      "post" : {
+        "operationId" : "Create Quote",
+        "responses" : {
+          "200" : {
+            "description" : "success"
+          }
+        }
+      }
+    },
+    "/oe/cancelorder/v1" : {
+      "delete" : {
+        "operationId" : "Cancel an order",
+        "responses" : {
+          "200" : {
+            "description" : "success"
+          }
+        }
+      }
+    }
+  },
+  "x-azure-api-id" : "Orders"
+}
